@@ -1,12 +1,12 @@
 import React from 'react';
 
 import StandardLayout from './layouts/Standard';
-import Landing from './pages/Landing';
+import Carousel from './pages/Carousel';
 
 function App() {
   return (
     <StandardLayout>
-      <Landing />
+      <Carousel />
     </StandardLayout>
   );
 }
