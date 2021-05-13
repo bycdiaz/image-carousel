@@ -7,27 +7,37 @@ import five from '../images/5.jpg';
 export const imagesAndQuotes = [
   {
     image: one,
-    catOneQuote: "See any birdies?",
-    catTwoQuote: "No",
+    quotes: {
+      catOne: "See any birdies?",
+      catTwo: "No"
+    }
   },
   {
     image: two,
-    catOneQuote: "How about mices?",
-    catTwoQuote: "No",
+    quotes: {
+      catOne: "How about mices?",
+      catTwo: "No"
+    }
   },
   {
     image: three,
-    catOneQuote: "And now?",
-    catTwoQuote: "No",
+    quotes: {
+      catOne: "And now?",
+      catTwo: "No"
+    }
   },
   {
     image: four,
-    catOneQuote: "Is that them?",
-    catTwoQuote: "No!",
+    quotes: {
+      catOne: "Is that them?",
+      catTwo: "No!"
+    }
   },
   {
     image: five,
-    catOneQuote: "How ab...",
-    catTwoQuote: "Gosh. Let me live!",
+    quotes: {
+      catOne: "How ab...",
+      catTwo: "Gosh. Let me live!"
+    }
   },
 ];
