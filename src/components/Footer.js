@@ -18,10 +18,10 @@ const FooterContainer = Styled.footer`
   width: 100vw;
 `
 
-function Footer() {
+function Footer(props) {
   return (
     <FooterContainer>
-      <h2>Copyright © 2021 Cats</h2>
+      <h2>{props.copyrightStatement}</h2>
     </FooterContainer>
   )
 }
