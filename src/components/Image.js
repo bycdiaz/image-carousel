@@ -2,7 +2,8 @@ import React from 'react';
 import Styled from "styled-components";
 
 const ImageElement = Styled.img`
-  width: 250px;
+  min-width: 250px;
+  max-width: 50%;
 `
 
 function Image(props) {
