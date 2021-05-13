@@ -10,14 +10,15 @@ const HeaderContainer = Styled.header`
   font-size: 24pt;
   color: #BACDD9;
 
-  padding: 25px;
+  width: 100vw;
+  padding: 20px 0;
   background-color: #283040;
 `
 
 function Header(props) {
   return (
     <HeaderContainer>
-      <h1>{props.titleInfo.title}:</h1>
+      <h1>{props.titleInfo.title}</h1>
       <h1>{props.titleInfo.subtitle}</h1>
     </HeaderContainer>
   )
