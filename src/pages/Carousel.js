@@ -11,7 +11,8 @@ import CarouselControls from '../components/CarouselControls';
 const CarouselContainer = Styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 `
 
 function Carousel() {
