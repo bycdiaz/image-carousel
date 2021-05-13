@@ -1,10 +1,17 @@
 import React from 'react';
 
+import Standard from './layouts/Standard';
+
 function App() {
+  const titleInfo = {
+    title: "Cats at Window",
+    subtitle: "a short story"
+  }
+  
   return (
-    <div className="App">
-      We in here!
-    </div>
+    <Standard titleInfo={titleInfo}>
+      
+    </Standard>
   );
 }
 
