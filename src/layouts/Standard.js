@@ -19,12 +19,17 @@ const PageStyle = Styled.div`
 `
 
 function StandardLayout(props) {
+  const titleInfo = {
+    title: "Cats at Window",
+    subtitle: "a short story"
+  }
+
   return (
     <PageStyle>
       {/* <div className='content'> */}
-        <Header titleInfo={props.titleInfo}/>
+        <Header titleInfo={titleInfo}/>
         {props.children}
-        <Footer className='footer' />
+        <Footer className='footer' copyrightStatement="Copyright © 2021 Cats"/>
       {/* </div> */}
     </PageStyle>
   )
