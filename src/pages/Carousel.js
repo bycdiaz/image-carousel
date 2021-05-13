@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
+import Styled from "styled-components";
 
 import { arrowDetails } from '../json/arrowDetails';
 import Arrow from '../components/Arrow';
+import { imagesAndQuotes } from '../json/imagesAndQuotes';
+import Image from '../components/Image';
 import CarouselControls from '../components/CarouselControls';
+
+const CarouselContainer = Styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
 
 function Carousel() {
   const [carouselIndex, setCarouselIndex] = useState(0);
@@ -33,9 +42,12 @@ function Carousel() {
   }
 
   return (
-    <CarouselControls>
-      <CarouselArrows />
-    </CarouselControls>
+    <CarouselContainer>
+      <Image image={imagesAndQuotes[carouselIndex].image}/>
+      <CarouselControls>
+        <CarouselArrows />
+      </CarouselControls>
+    </CarouselContainer>
   );
 }
 
