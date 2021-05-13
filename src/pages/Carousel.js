@@ -5,6 +5,7 @@ import { arrowDetails } from '../json/arrowDetails';
 import Arrow from '../components/Arrow';
 import { imagesAndQuotes } from '../json/imagesAndQuotes';
 import Image from '../components/Image';
+import Quotes from '../components/Quotes';
 import CarouselControls from '../components/CarouselControls';
 
 const CarouselContainer = Styled.div`
@@ -16,7 +17,7 @@ const CarouselContainer = Styled.div`
 function Carousel() {
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [currentNumber, setCurrentNumber] = useState(0);
-  console.log(carouselIndex);
+
   const sampleArray = [0, 1, 2, 3, 4];
   function captureArrowClick(direction) {
     const index = direction === 'left' ? currentNumber - 1 : currentNumber + 1;
@@ -44,6 +45,7 @@ function Carousel() {
   return (
     <CarouselContainer>
       <Image image={imagesAndQuotes[carouselIndex].image}/>
+      <Quotes quotes={imagesAndQuotes[carouselIndex].quotes}/>
       <CarouselControls>
         <CarouselArrows />
       </CarouselControls>
