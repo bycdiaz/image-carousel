@@ -21,9 +21,17 @@ const arrows = [
   }
 ];
 
-function CarouselControls() {
+function CarouselControls(props) {
   function Arrows() {
-    return arrows.map(arrow => <Arrow arrowDetails={arrow}/>)
+    return arrows.map(arrow => {
+      return (
+        <Arrow
+          arrowDetails={arrow}
+          key={arrow.direction}
+          captureArrowClick={props.captureArrowClick}
+        />
+      )
+    })
   }
 
   return (

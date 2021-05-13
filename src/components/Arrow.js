@@ -10,6 +10,7 @@ function Arrow(props) {
     <ArrowImage
       src={props.arrowDetails.image}
       alt={`arrow pointing ${props.arrowDetails.direction}`}
+      onClick={() => props.captureArrowClick(props.arrowDetails.direction)}
     />
   );
 }
