@@ -1,12 +1,13 @@
 import React from 'react';
 
-import Standard from './layouts/Standard';
+import StandardLayout from './layouts/Standard';
+import Landing from './pages/Landing';
 
 function App() {
   return (
-    <Standard>
-      
-    </Standard>
+    <StandardLayout>
+      <Landing />
+    </StandardLayout>
   );
 }
 
