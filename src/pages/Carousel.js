@@ -11,23 +11,23 @@ import CarouselControls from '../components/CarouselControls';
 const CarouselContainer = Styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+
+  max-width: 900px;
 `
 
 function Carousel() {
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [currentNumber, setCurrentNumber] = useState(0);
 
-  const sampleArray = [0, 1, 2, 3, 4];
   function captureArrowClick(direction) {
     const index = direction === 'left' ? currentNumber - 1 : currentNumber + 1;
     setCurrentNumber(index);
 
-    if (index % sampleArray.length >= 0) {
-      setCarouselIndex(index % sampleArray.length);
+    if (index % imagesAndQuotes.length >= 0) {
+      setCarouselIndex(index % imagesAndQuotes.length);
     } else {
-      setCarouselIndex((index % sampleArray.length) + sampleArray.length); 
+      setCarouselIndex((index % imagesAndQuotes.length) + imagesAndQuotes.length); 
     }
   }
 
