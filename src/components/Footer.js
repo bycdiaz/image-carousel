@@ -11,6 +11,9 @@ const FooterContainer = Styled.footer`
   background-color: #BACDD9;
   padding: 20px 0;
   width: 100vw;
+
+  box-shadow: 0px 1px 8px black;
+
 `
 
 function Footer(props) {
