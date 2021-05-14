@@ -13,6 +13,8 @@ const HeaderContainer = Styled.header`
   width: 100vw;
   padding: 20px 0;
   background-color: #283040;
+
+  box-shadow: 0 2px 6px black;
 `
 
 function Header(props) {
