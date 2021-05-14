@@ -2,7 +2,13 @@ import React from 'react';
 import Styled from "styled-components";
 
 const QuotesContainer = Styled.div`
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18pt;
+  margin-top: 25px;
+  font-weight: bold;
+  line-height: 40px;
 `
 
 function Quotes(props) {
