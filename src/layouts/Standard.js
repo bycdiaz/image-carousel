@@ -11,6 +11,7 @@ const PageStyle = Styled.div`
   justify-content: space-between;
   align-items: center;
   height: 100vh;
+  background-color: #f2f3f4;
 `
 
 function StandardLayout(props) {
